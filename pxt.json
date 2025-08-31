@@ -2,7 +2,8 @@
     "name": "Juego.v0.0.1",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "controller": "*"
     },
     "files": [
         "main.blocks",
@@ -36,7 +37,7 @@
         "#78DC52",
         "#003FAD",
         "#FFFFFF",
-        "#8E2EC4",
+        "#292929",
         "#676565",
         "#332219",
         "#E5CDC4",
