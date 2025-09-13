@@ -1,10 +1,35 @@
-controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
-    // Velocidad de la animación (ms por frame)
-    // Se repite en bucle
+controller.right.onEvent(ControllerButtonEvent.Released, function () {
+    mySprite.vx = 0
     animation.runImageAnimation(
     mySprite,
-    assets.animation`myAnim`,
+    assets.animation`AnimacionIdle`,
+    180,
+    true
+    )
+})
+controller.left.onEvent(ControllerButtonEvent.Released, function () {
+    mySprite.vx = 0
+    animation.runImageAnimation(
+    mySprite,
+    assets.animation`AnimacionIdleL`,
+    180,
+    true
+    )
+})
+controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
+    animation.runImageAnimation(
+    mySprite,
+    assets.animation`AnimacionCorrer`,
     200,
+    true
+    )
+})
+controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
+    mySprite.vx = -100
+    animation.runImageAnimation(
+    mySprite,
+    assets.animation`AnimacionCorrerL`,
+    100,
     true
     )
 })
