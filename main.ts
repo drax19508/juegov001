@@ -33,11 +33,17 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     true
     )
 })
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (mySprite.isHittingTile(CollisionDirection.Bottom)) {
+        mySprite.vy = -150
+    }
+})
 let mySprite: Sprite = null
+tiles.setCurrentTilemap(tilemap`nivel3`)
 scene.setBackgroundImage(assets.image`FondodeEscuela`)
 mySprite = sprites.create(assets.image`Estudiante2`, SpriteKind.Player)
 controller.moveSprite(mySprite)
-mySprite.setStayInScreen(true)
+mySprite.setStayInScreen(false)
 controller.moveSprite(mySprite, 100, 0)
 mySprite.ay = 300
 forever(function () {
