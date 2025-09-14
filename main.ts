@@ -41,3 +41,5 @@ mySprite.setStayInScreen(true)
 forever(function () {
     music.play(music.stringPlayable("G A E E G E E D ", 72), music.PlaybackMode.UntilDone)
 })
+controller.moveSprite(mySprite, 100, 0)
+mySprite.ay = 300
