@@ -38,8 +38,8 @@ scene.setBackgroundImage(assets.image`FondodeEscuela`)
 mySprite = sprites.create(assets.image`Estudiante2`, SpriteKind.Player)
 controller.moveSprite(mySprite)
 mySprite.setStayInScreen(true)
+controller.moveSprite(mySprite, 100, 0)
+mySprite.ay = 300
 forever(function () {
     music.play(music.stringPlayable("G A E E G E E D ", 72), music.PlaybackMode.UntilDone)
 })
-controller.moveSprite(mySprite, 100, 0)
-mySprite.ay = 300
