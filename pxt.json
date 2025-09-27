@@ -1,5 +1,5 @@
 {
-    "name": "Juego.v0.0.1 - Copia - Copia",
+    "name": "Juego.v0.0.2  ",
     "description": "",
     "dependencies": {
         "device": "*",
@@ -19,7 +19,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "2.0.56",
+        "target": "2.0.57",
         "targetId": "arcade"
     },
     "supportedTargets": [
